@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ui.IncidentsNearYouDialogController"
+           stylesheets="@report.css" styleClass="dialogOverlay">
+    <VBox spacing="12" styleClass="dialogCard" maxWidth="420">
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label text="Incidents Near You" styleClass="dialogTitle"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Close" onAction="#onClose" styleClass="ghostBtn"/>
+        </HBox>
+
+        <Label text="Find incidents around your location (demo UI)." styleClass="muted"/>
+
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <TextField promptText="Search area / ZIP" styleClass="field" HBox.hgrow="ALWAYS"/>
+            <Button text="Search" styleClass="primaryBtnSmall"/>
+        </HBox>
+
+        <VBox spacing="10">
+            <StackPane styleClass="listItem">
+                <VBox spacing="2">
+                    <Label text="Noise complaint" styleClass="listTitle"/>
+                    <Label text="0.7 km away • 30 min ago" styleClass="mutedSmall"/>
+                </VBox>
+            </StackPane>
+            <StackPane styleClass="listItem">
+                <VBox spacing="2">
+                    <Label text="Bike theft report" styleClass="listTitle"/>
+                    <Label text="1.2 km away • Today" styleClass="mutedSmall"/>
+                </VBox>
+            </StackPane>
+        </VBox>
+
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Button text="Done" onAction="#onClose" styleClass="primaryBtn"/>
+        </HBox>
+    </VBox>
+</StackPane>

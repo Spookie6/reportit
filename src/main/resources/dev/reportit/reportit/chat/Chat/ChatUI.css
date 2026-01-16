@@ -1,0 +1,93 @@
+
+#rootPane {
+    -fx-background-radius: 38;
+    -fx-background-color: linear-gradient(to bottom right, #6fbf76 0%, #d9e2dd 85%);
+}
+
+.header-container {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.footer-container {
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #555555;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+.date-label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 10px;
+    -fx-padding: 0 0 10 0;
+}
+
+
+
+.bubble-left {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 15;
+    -fx-padding: 8 12 8 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 1);
+    -fx-font-size: 14px;
+}
+
+.bubble-right {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-padding: 8 12 8 12;
+    -fx-font-size: 14px;
+    -fx-max-width: 250px;
+}
+
+.chat-scroll {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.chat-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+
+.chat-input {
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: #999999;
+    -fx-font-size: 14px;
+}
+
+.navBar {
+    -fx-min-height: 92px;
+}
+
+.navIcon {
+    -fx-fill: #101010;
+    -fx-scale-x: 1.6;
+    -fx-scale-y: 1.6;
+}
+
+.plusButton {
+    -fx-min-width: 58px;
+    -fx-min-height: 58px;
+    -fx-max-width: 58px;
+    -fx-max-height: 58px;
+    -fx-background-radius: 29px;
+    -fx-background-color: #d5a24b;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.20), 14, 0.25, 0, 6);
+}
+
+.plusText {
+    -fx-font-size: 34px;
+    -fx-font-weight: 800;
+    -fx-text-fill: white;
+    -fx-translate-y: -2;
+}

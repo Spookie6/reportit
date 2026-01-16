@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ui.FeaturedIncidentsDialogController"
+           stylesheets="@report.css" styleClass="dialogOverlay">
+    <VBox spacing="12" styleClass="dialogCard" maxWidth="420">
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label text="Featured incidents" styleClass="dialogTitle"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Close" onAction="#onClose" styleClass="ghostBtn"/>
+        </HBox>
+
+        <Label text="A curated list of recent incidents (demo content)." styleClass="muted"/>
+
+        <VBox spacing="10">
+            <StackPane styleClass="listItem">
+                <VBox spacing="2">
+                    <Label text="Suspicious activity reported" styleClass="listTitle"/>
+                    <Label text="2 hours ago • Downtown" styleClass="mutedSmall"/>
+                </VBox>
+            </StackPane>
+            <StackPane styleClass="listItem">
+                <VBox spacing="2">
+                    <Label text="Road blocked due to construction" styleClass="listTitle"/>
+                    <Label text="Yesterday • Main St." styleClass="mutedSmall"/>
+                </VBox>
+            </StackPane>
+            <StackPane styleClass="listItem">
+                <VBox spacing="2">
+                    <Label text="Lost item found near park" styleClass="listTitle"/>
+                    <Label text="3 days ago • City Park" styleClass="mutedSmall"/>
+                </VBox>
+            </StackPane>
+        </VBox>
+
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Button text="Done" onAction="#onClose" styleClass="primaryBtn"/>
+        </HBox>
+    </VBox>
+</StackPane>

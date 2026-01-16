@@ -1,0 +1,103 @@
+.bg{
+    -fx-background-color: linear-gradient(to bottom, #78B56F 0%, #BFE0C6 52%, #E9EFEA 100%);
+}
+
+/* Header */
+.h1{
+    -fx-font-family: "System";
+    -fx-font-size: 30px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #0D1A12;
+}
+.gearText{
+    -fx-font-size: 26px;
+    -fx-text-fill: #0D1A12;
+}
+
+/* Search */
+.search-pill{
+    -fx-background-color: rgba(255,255,255,0.12);
+    -fx-border-color: rgba(255,255,255,0.55);
+    -fx-border-width: 2;
+    -fx-background-radius: 28;
+    -fx-border-radius: 28;
+}
+.search-text{
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-text-fill: rgba(13,26,18,0.8);
+}
+.vdiv{
+    -fx-background-color: rgba(13,26,18,0.65);
+    -fx-opacity: 0.75;
+}
+.sliders{
+    -fx-stroke: rgba(13,26,18,0.9);
+    -fx-stroke-width: 2.2;
+    -fx-fill: transparent;
+}
+.slider-knob{
+    -fx-fill: rgba(13,26,18,0.9);
+}
+
+/* Badge */
+.badge-shield{
+    -fx-fill: #7C8E4D;
+    -fx-stroke: rgba(0,0,0,0.18);
+    -fx-stroke-width: 0.6;
+}
+.badge-bubble{
+    -fx-fill: rgba(255,255,255,0.92);
+}
+.badge-dot{
+    -fx-fill: #6A6A6A;
+}
+
+/* Avatar */
+.avatar-outer{ -fx-fill: rgba(255,255,255,0.95); }
+.avatar-inner{ -fx-fill: #D6D6D6; }
+
+/* Mood */
+.mood-pill{
+    -fx-background-color: linear-gradient(to bottom, rgba(204,174,153,0.95) 0%, rgba(240,232,224,0.95) 100%);
+    -fx-background-radius: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 12, 0.2, 0, 3);
+}
+.mood-text{
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #2B231D;
+}
+.mood-bad{
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #7C3F3A;
+}
+.chev{
+    -fx-stroke: #0D1A12;
+    -fx-stroke-width: 3.0;
+    -fx-fill: transparent;
+}
+
+/* Bottom nav */
+.nav-icon{
+    -fx-fill: #0A0A0A;
+    -fx-scale-x: 1.7;
+    -fx-scale-y: 1.7;
+}
+.nav-dot-red{
+    -fx-fill: #D05A4E;
+}
+
+/* FAB */
+.fab{
+    -fx-background-color: #D3A85F;
+    -fx-background-radius: 999;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.22), 14, 0.22, 0, 4);
+}
+.fab-plus{
+    -fx-font-size: 44px;
+    -fx-font-weight: 700;
+    -fx-text-fill: rgba(255,255,255,0.88);
+    -fx-translate-y: -2;
+}

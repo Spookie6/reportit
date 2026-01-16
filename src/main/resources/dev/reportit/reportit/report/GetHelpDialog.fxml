@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.SVGPath?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ui.GetHelpDialogController"
+           stylesheets="@report.css" styleClass="dialogOverlay">
+    <VBox spacing="12" styleClass="dialogCard" maxWidth="420">
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label text="Get Help" styleClass="dialogTitle"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Close" onAction="#onClose" styleClass="ghostBtn"/>
+        </HBox>
+
+        <Label text="If you feel unsafe, contact someone you trust or local services." styleClass="muted"/>
+
+        <StackPane styleClass="helpTile">
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <StackPane styleClass="miniIcon">
+                    <SVGPath styleClass="miniGlyph" content="M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22zm1 17h-2v-2h2v2zm0-4h-2V6h2v8z"/>
+                </StackPane>
+                <VBox spacing="2">
+                    <Label text="Emergency" styleClass="listTitle"/>
+                    <Label text="Call your local emergency number." styleClass="mutedSmall"/>
+                </VBox>
+            </HBox>
+        </StackPane>
+
+        <StackPane styleClass="helpTile">
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <StackPane styleClass="miniIcon">
+                    <SVGPath styleClass="miniGlyph" content="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.59a1 1 0 0 1-.25 1.01l-2.2 2.19z"/>
+                </StackPane>
+                <VBox spacing="2">
+                    <Label text="Non-emergency help" styleClass="listTitle"/>
+                    <Label text="Call a helpline or local support services." styleClass="mutedSmall"/>
+                </VBox>
+            </HBox>
+        </StackPane>
+
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Button text="Done" onAction="#onClose" styleClass="primaryBtn"/>
+        </HBox>
+    </VBox>
+</StackPane>

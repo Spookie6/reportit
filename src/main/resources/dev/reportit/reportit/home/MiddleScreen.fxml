@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+
+<AnchorPane prefHeight="844" prefWidth="390" stylesheets="@middle.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+        <!-- Background -->
+        <Region styleClass="bg" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
+
+        <!-- Header -->
+        <Label layoutX="28" layoutY="42" styleClass="h1" text="Welcome, user" />
+        <Label layoutX="332" layoutY="40" styleClass="gearText" text="⚙" />
+
+        <!-- Search pill -->
+        <StackPane layoutX="35" layoutY="118" prefHeight="48" prefWidth="320" styleClass="search-pill">
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <padding>
+                    <Insets bottom="0" left="18" right="14" top="0" />
+                </padding>
+
+                <Label styleClass="search-text" text="Search" />
+                <Region HBox.hgrow="ALWAYS" />
+
+                <!-- Badge (simple) -->
+                <StackPane prefHeight="26" prefWidth="26">
+                    <!-- IMPORTANT: Polygon points must be comma-separated in SceneBuilder -->
+                    <Polygon points="13,2,22,6,22,13,13,24,4,13,4,6" styleClass="badge-shield" />
+                    <Rectangle arcHeight="6" arcWidth="6" height="10" styleClass="badge-bubble" width="14" />
+                    <Circle radius="1.2" styleClass="badge-dot" translateX="-3.2" translateY="-0.5" />
+                    <Circle radius="1.2" styleClass="badge-dot" translateX="0" translateY="-0.5" />
+                    <Circle radius="1.2" styleClass="badge-dot" translateX="3.2" translateY="-0.5" />
+                </StackPane>
+
+                <Region prefHeight="26" prefWidth="1" styleClass="vdiv" />
+
+                <!-- Sliders icon -->
+                <SVGPath content="M4 8 H22 M4 16 H22 M4 24 H22" styleClass="sliders" />
+            </HBox>
+        </StackPane>
+
+        <!-- Avatar -->
+        <StackPane layoutX="0" layoutY="250" prefHeight="260" prefWidth="390">
+            <Circle radius="122" styleClass="avatar-outer" />
+            <Circle radius="48" styleClass="avatar-inner" translateY="-34" />
+            <Circle radius="72" styleClass="avatar-inner" translateY="54" />
+        </StackPane>
+
+        <!-- Mood dropdown (visual only) -->
+        <StackPane layoutX="65" layoutY="520" prefHeight="70" prefWidth="260" styleClass="mood-pill">
+            <HBox alignment="CENTER_LEFT">
+                <padding>
+                    <Insets bottom="0" left="22" right="22" top="0" />
+                </padding>
+                <Label styleClass="mood-text" text="Mood," />
+                <Label styleClass="mood-bad" text=" Bad" />
+                <Region HBox.hgrow="ALWAYS" />
+                <SVGPath content="M4 6 L12 14 L20 6" styleClass="chev" />
+            </HBox>
+        </StackPane>
+
+        <!-- Bottom nav -->
+        <Pane layoutX="0" layoutY="720" prefHeight="124" prefWidth="390">
+            <!-- Home icon -->
+            <SVGPath content="M12 3 L3 11 L3 23 L10 23 L10 16 L14 16 L14 23 L21 23 L21 11 Z" layoutX="86" layoutY="62" styleClass="nav-icon" />
+
+            <!-- FAB -->
+            <StackPane layoutX="163" layoutY="20" prefHeight="64" prefWidth="64" styleClass="fab">
+                <Label styleClass="fab-plus" text="+" />
+            </StackPane>
+
+            <!-- Chat icon (simple bubble) -->
+            <SVGPath content="M3 6 H21 V18 H12 L8 22 V18 H3 Z" layoutX="283" layoutY="62" styleClass="nav-icon" />
+        </Pane>
+
+    </children>
+</AnchorPane>
