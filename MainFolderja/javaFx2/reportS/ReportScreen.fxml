@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.SVGPath?>
+
+<StackPane fx:id="rootStackPane"
+           prefHeight="740.0" prefWidth="390.0"
+           stylesheets="@report.css"
+           xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="PageController">
+
+    <AnchorPane onMouseDragged="#onWindowDragged" onMousePressed="#onWindowPressed" styleClass="screen">
+        <children>
+            <VBox prefHeight="740.0" prefWidth="390.0" spacing="18.0" styleClass="content">
+                <padding>
+                    <Insets bottom="18" left="22" right="22" top="28" />
+                </padding>
+
+                <HBox alignment="CENTER_LEFT" spacing="12">
+                    <Circle fx:id="profileCircle" radius="22" styleClass="avatar" />
+
+                    <VBox spacing="2">
+                        <Label styleClass="welcomeSmall" text="Welcome" />
+                        <Label fx:id="lblWelcome" styleClass="welcomeBig" text="user" />
+                    </VBox>
+
+                    <Region HBox.hgrow="ALWAYS" />
+                </HBox>
+
+                <Label styleClass="title" text="Report an incident to keep yourself&#10;and others safe" wrapText="true" />
+
+                <GridPane hgap="18" styleClass="cardsGrid" vgap="18">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="50" />
+                        <ColumnConstraints percentWidth="50" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints vgrow="ALWAYS" />
+                        <RowConstraints vgrow="ALWAYS" />
+                    </rowConstraints>
+
+                    <StackPane styleClass="card" GridPane.columnIndex="0" GridPane.rowIndex="0"
+                               onMouseClicked="#onAddIncidentCardClicked">
+                        <Label styleClass="cardText" text="Add&#10;an&#10;Incident" />
+                    </StackPane>
+
+                    <StackPane styleClass="card" GridPane.columnIndex="1" GridPane.rowIndex="0"
+                               onMouseClicked="#onFeaturedCardClicked">
+                        <Label styleClass="cardText" text="Featured&#10;incidents" />
+                    </StackPane>
+
+                    <StackPane styleClass="card" GridPane.columnIndex="0" GridPane.rowIndex="1"
+                               onMouseClicked="#onNearYouCardClicked">
+                        <Label styleClass="cardText" text="Incidents&#10;Near&#10;You" />
+                    </StackPane>
+
+                    <StackPane styleClass="card" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                               onMouseClicked="#onGetHelpCardClicked">
+                        <Label styleClass="cardText" text="Get&#10;Help" />
+                    </StackPane>
+                </GridPane>
+
+                <Region VBox.vgrow="ALWAYS" />
+
+                <StackPane styleClass="navBar">
+                    <HBox alignment="CENTER" spacing="54">
+                        <SVGPath fx:id="btnHome" content="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="#1b1a1a" onMouseClicked="#onHomeClicked" pickOnBounds="true" styleClass="navIcon" />
+
+                        <StackPane fx:id="btnAdd" onMouseClicked="#onAddClicked" styleClass="plusButton">
+                            <Label styleClass="plusText" text="+" />
+                        </StackPane>
+
+                        <SVGPath fx:id="btnThreads" content="M3 6 H21 V18 H12 L8 22 V18 H3 Z" onMouseClicked="#onThreadsClicked" pickOnBounds="true" styleClass="navIcon" />
+                    </HBox>
+                </StackPane>
+
+            </VBox>
+        </children>
+    </AnchorPane>
+</StackPane>

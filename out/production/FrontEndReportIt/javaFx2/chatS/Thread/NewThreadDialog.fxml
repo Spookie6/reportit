@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="PageController"
+           stylesheets="@ThreadUI.css" styleClass="dialogOverlay">
+
+    <VBox spacing="10"
+          style="-fx-background-color: white; -fx-background-radius: 20; -fx-padding: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);"
+          maxWidth="380" maxHeight="-Infinity">
+
+        <Label text="New Thread" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+        <Label text="Enter a title for your new conversation:" style="-fx-text-fill: #666;"/>
+
+        <TextField fx:id="tfNewThreadTitle" promptText="Thread Title"
+                   style="-fx-background-radius: 10; -fx-padding: 8; -fx-background-color: #f0f0f0;"/>
+
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Button text="Cancel" onAction="#onClose"
+                    style="-fx-background-color: transparent; -fx-text-fill: #666; -fx-cursor: hand;"/>
+            <Button text="Create" onAction="#onCreateThread"
+                    style="-fx-background-color: #d5a24b; -fx-text-fill: white; -fx-background-radius: 10; -fx-padding: 8 15; -fx-font-weight: bold; -fx-cursor: hand;"/>
+        </HBox>
+    </VBox>
+</StackPane>

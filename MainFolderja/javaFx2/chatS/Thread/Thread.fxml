@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootStackPane"
+           prefHeight="740.0" prefWidth="393.0"
+           stylesheets="@ThreadUI.css"
+           xmlns="http://javafx.com/javafx/25"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="PageController">
+
+    <AnchorPane id="rootPane"
+                onMousePressed="#onWindowPressed"
+                onMouseDragged="#onWindowDragged">
+        <children>
+
+            <HBox alignment="CENTER" prefHeight="60.0" styleClass="header-container" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0">
+                <padding>
+                    <Insets left="15.0" right="15.0" />
+                </padding>
+                <children>
+                    <Region HBox.hgrow="ALWAYS" />
+                    <Label text="Threads">
+                        <font>
+                            <Font name="System Bold" size="20.0" />
+                        </font>
+                        <HBox.margin>
+                            <Insets left="45.0" />
+                        </HBox.margin>
+                    </Label>
+                    <Region HBox.hgrow="ALWAYS" />
+                    <Button mnemonicParsing="false" styleClass="icon-button" text="📝" onAction="#onNewThreadClicked"/>
+                </children>
+            </HBox>
+
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="chat-scroll" vbarPolicy="NEVER" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="130.0">
+                <content>
+                    <VBox fx:id="threadContainer" spacing="10.0">
+                        <padding>
+                            <Insets bottom="20.0" left="20.0" right="20.0" />
+                        </padding>
+                    </VBox>
+                </content>
+            </ScrollPane>
+
+            <StackPane styleClass="navBar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                <HBox alignment="CENTER" spacing="54">
+                    <SVGPath fx:id="btnHome"
+                             content="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+                             styleClass="navIcon"
+                             onMouseClicked="#onHomeClicked"
+                             pickOnBounds="true" />
+
+                    <StackPane fx:id="btnAdd"
+                               styleClass="plusButton"
+                               onMouseClicked="#onAddClicked">
+                        <Label styleClass="plusText" text="+" />
+                    </StackPane>
+
+                    <SVGPath fx:id="btnThreads"
+                             content="M3 6 H21 V18 H12 L8 22 V18 H3 Z"
+                             fill="#1b1a1a"
+                             styleClass="navIcon"
+                             onMouseClicked="#onThreadsClicked"
+                             pickOnBounds="true" />
+                </HBox>
+            </StackPane>
+
+        </children>
+    </AnchorPane>
+</StackPane>
