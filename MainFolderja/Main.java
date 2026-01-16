@@ -10,8 +10,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            // Dit moet het pad zijn naar de eerste scherm van de app
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/javaFx2/homeS/HomeScreen.fxml")));
+            // UPDATED PATH: Points to LoginScreen now
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/javaFx2/loginS/LoginScreen.fxml")));
 
             Scene scene = new Scene(root);
             primaryStage.setTitle("ReportIt App");

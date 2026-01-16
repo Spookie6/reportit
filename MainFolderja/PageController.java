@@ -43,6 +43,12 @@ public class PageController {
     private static int activeThreadId = -1;
     private static String activeThreadTitle = "Chat";
 
+    @FXML private TextField tfLoginUser;
+    @FXML private PasswordField pfLoginPass;
+    @FXML private TextField tfRegUser;
+    @FXML private TextField tfRegEmail;
+    @FXML private PasswordField pfRegPass;
+
     @FXML private StackPane moodContainer;
     @FXML private Label lblMoodValue;
     @FXML private Label lblWelcome;
@@ -60,8 +66,6 @@ public class PageController {
     @FXML private VBox chatContainer;
     @FXML private Label lblChatTitle;
     @FXML private TextField tfChatInput;
-
-    // --- NEW: Added for the popup ---
     @FXML private TextField tfNewThreadTitle;
 
     public void initialize() {
@@ -84,12 +88,96 @@ public class PageController {
         }
     }
 
+    @FXML
+    void onLoginClicked(ActionEvent event) {
+        String user = tfLoginUser.getText();
+        String pass = pfLoginPass.getText();
+
+        if (user == null || user.isEmpty() || pass == null || pass.isEmpty()) {
+            showAlert("Login Error", "Please enter username and password.");
+            return;
+        }
+
+        boolean isValid = false;
+
+        /* try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
+            String sql = "SELECT * FROM users WHERE username = ? AND password = ?";
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, user);
+            stmt.setString(2, pass);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                isValid = true;
+            }
+        } catch (Exception e) { e.printStackTrace(); }
+        */
+
+        isValid = true;
+
+        if (isValid) {
+            System.out.println("Login Successful!");
+            switchScene(event, "/javaFx2/homeS/HomeScreen.fxml");
+        } else {
+            showAlert("Login Failed", "Invalid username or password.");
+        }
+    }
+
+    @FXML
+    void onRegisterClicked(ActionEvent event) {
+        String user = tfRegUser.getText();
+        String email = tfRegEmail.getText();
+        String pass = pfRegPass.getText();
+
+        if (user == null || user.isEmpty() || email == null || email.isEmpty() || pass == null || pass.isEmpty()) {
+            showAlert("Registration Error", "Please fill in all fields.");
+            return;
+        }
+
+        /* try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
+            String sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, user);
+            stmt.setString(2, email);
+            stmt.setString(3, pass);
+            stmt.executeUpdate();
+
+            System.out.println("User Registered: " + user);
+            switchScene(event, "/javaFx2/loginS/LoginScreen.fxml");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            showAlert("Database Error", "Could not register user.");
+        }
+        */
+
+        System.out.println("Mock Register: " + user);
+        switchScene(event, "/javaFx2/loginS/LoginScreen.fxml");
+    }
+
+    @FXML
+    void onGoToRegister(ActionEvent event) {
+        switchScene(event, "/javaFx2/loginS/RegisterScreen.fxml");
+    }
+
+    @FXML
+    void onBackToLogin(ActionEvent event) {
+        switchScene(event, "/javaFx2/loginS/LoginScreen.fxml");
+    }
+
+    private void showAlert(String title, String content) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(content);
+        alert.showAndWait();
+    }
+
     private void loadProfilePicture() {
         if (profileCircle == null) return;
         String imagePath = "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";
 
         /* try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
-            String sql = "SELECT profile_img_url FROM users WHERE id = 1"; // Assuming user ID 1
+            String sql = "SELECT profile_img_url FROM users WHERE id = 1";
             PreparedStatement stmt = conn.prepareStatement(sql);
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
@@ -109,7 +197,7 @@ public class PageController {
     private String getUsernameFromDatabase() {
         String username = "Guest";
         /* try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
-            String sql = "SELECT username FROM users WHERE id = 1"; // Assuming user ID 1
+            String sql = "SELECT username FROM users WHERE id = 1";
             PreparedStatement stmt = conn.prepareStatement(sql);
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
@@ -147,7 +235,7 @@ public class PageController {
         try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
             String sql = "INSERT INTO user_moods (user_id, mood, created_at) VALUES (?, ?, ?)";
             PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setInt(1, 1); // User ID
+            stmt.setInt(1, 1);
             stmt.setString(2, mood);
             stmt.setString(3, now.toString());
             stmt.executeUpdate();
@@ -343,10 +431,8 @@ public class PageController {
         switchScene(null, "/javaFx2/chatS/Chat/ChatUI.fxml");
     }
 
-
     @FXML
     void onNewThreadClicked(ActionEvent event) {
-        // Opens the popup
         openOverlay("/javaFx2/chatS/Thread/NewThreadDialog.fxml");
     }
 
@@ -437,7 +523,7 @@ public class PageController {
             String sql = "INSERT INTO messages (thread_id, is_me, content, created_at) VALUES (?, ?, ?, NOW())";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setInt(1, activeThreadId);
-            stmt.setBoolean(2, true); // True because 'I' sent it
+            stmt.setBoolean(2, true);
             stmt.setString(3, content);
             stmt.executeUpdate();
 
@@ -505,6 +591,8 @@ public class PageController {
                     stage = (Stage) threadContainer.getScene().getWindow();
                 } else if (chatContainer != null && chatContainer.getScene() != null) {
                     stage = (Stage) chatContainer.getScene().getWindow();
+                } else if (tfLoginUser != null && tfLoginUser.getScene() != null) {
+                    stage = (Stage) tfLoginUser.getScene().getWindow();
                 } else {
                     return;
                 }
