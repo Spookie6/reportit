@@ -1,0 +1,69 @@
+.screen {
+    -fx-background-radius: 38;
+    -fx-background-color: linear-gradient(to bottom right, #6fbf76 0%, #d9e2dd 85%);
+}
+
+.app-title {
+    -fx-font-family: "System";
+    -fx-font-size: 36px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #0D1A12;
+}
+
+.app-subtitle {
+    -fx-font-size: 16px;
+    -fx-text-fill: rgba(13,26,18,0.7);
+}
+
+.label-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1b1b1b;
+    -fx-padding: 0 0 0 5;
+}
+
+.field {
+    -fx-background-color: rgba(255,255,255,0.78);
+    -fx-background-radius: 14;
+    -fx-border-color: rgba(0,0,0,0.10);
+    -fx-border-radius: 14;
+    -fx-padding: 12 15;
+    -fx-font-size: 14px;
+}
+
+.primaryBtn {
+    -fx-background-color: rgba(219, 170, 77, 0.95);
+    -fx-text-fill: #111;
+    -fx-font-weight: 800;
+    -fx-background-radius: 14;
+    -fx-padding: 12 14;
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+}
+.primaryBtn:hover {
+    -fx-opacity: 0.92;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);
+}
+
+.link-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+    -fx-underline: true;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+.link-btn:hover {
+    -fx-text-fill: #000;
+}
+
+/* Dialog Overlay styles (needed if you reuse PageController alerts) */
+.dialogOverlay {
+    -fx-background-color: rgba(0,0,0,0.28);
+    -fx-padding: 18;
+}
+.dialogCard {
+    -fx-background-color: rgba(255,255,255,0.88);
+    -fx-background-radius: 22;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.20), 22, 0.25, 0, 10);
+}

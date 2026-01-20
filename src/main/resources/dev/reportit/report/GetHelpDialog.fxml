@@ -5,13 +5,13 @@
 <?import javafx.scene.shape.SVGPath?>
 
 <StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="ui.GetHelpDialogController"
+           fx:controller="dev.reportit.Controllers"
            stylesheets="@report.css" styleClass="dialogOverlay">
     <VBox spacing="12" styleClass="dialogCard" maxWidth="420">
         <HBox alignment="CENTER_LEFT" spacing="10">
             <Label text="Get Help" styleClass="dialogTitle"/>
             <Region HBox.hgrow="ALWAYS"/>
-            <Button text="Close" onAction="#onClose" styleClass="ghostBtn"/>
+            <Button text="Close" onAction="#goHome" styleClass="ghostBtn"/>
         </HBox>
 
         <Label text="If you feel unsafe, contact someone you trust or local services." styleClass="muted"/>
@@ -41,7 +41,7 @@
         </StackPane>
 
         <HBox alignment="CENTER_RIGHT" spacing="10">
-            <Button text="Done" onAction="#onClose" styleClass="primaryBtn"/>
+            <Button text="Done" onAction="#goHome" styleClass="primaryBtn"/>
         </HBox>
     </VBox>
 </StackPane>

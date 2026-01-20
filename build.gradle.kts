@@ -14,6 +14,7 @@ repositories {
 }
 
 val junitVersion = "5.12.1"
+val jacksonVersion = "2.17.0"
 
 java {
     toolchain {
@@ -43,6 +44,7 @@ dependencies {
     implementation("org.kordamp.ikonli:ikonli-javafx:12.3.1")
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+    implementation("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
 }
 
 tasks.withType<Test> {

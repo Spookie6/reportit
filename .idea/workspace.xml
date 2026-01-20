@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bc88efd-c383-4272-b4d6-134bbbbbbd97" name="Changes" comment="" />
+    <list default="true" id="8bc88efd-c383-4272-b4d6-134bbbbbbd97" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/AppContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/Scenes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/ScreenManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/ApiUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/AuthState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/UserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/WebSocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/reportit/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/ReportIt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/reportit/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/Controllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/reportit/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/chat/Chat/ChatUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Chat/ChatUI.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/chat/Chat/ChatUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Chat/ChatUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/chat/Thread/Thread.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Thread/Thread.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/chat/Thread/ThreadUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Thread/ThreadUI.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/home/MiddleScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/home/MiddleScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/home/middle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/home/middle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/AddIncidentDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/AddIncidentDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/FeaturedIncidentsDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/FeaturedIncidentsDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/GetHelpDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/GetHelpDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/IncidentsNearYouDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/IncidentsNearYouDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/ReportScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/ReportScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/report.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/report.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,45 +47,69 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="reportit" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
-  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\enric\.gradle\wrapper\dists\gradle-8.13-bin\5xuhj0ry160q40clulazy9h7d\gradle-8.13" javaHome="C:\Users\enric\.jdks\temurin-17.0.15" gradleVersion="8.13" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\enric\.gradle\wrapper\dists\gradle-8.13-bin\5xuhj0ry160q40clulazy9h7d\gradle-8.13" javaHome="C:\Users\enric\.jdks\temurin-21.0.7" gradleVersion="8.13" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="38MFHAnQCdJlW7x6zgmj4ZTaf44" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.reportit [:dev.reportit.reportit.Launcher.main()].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/enric/IdeaProjects/reportit/src/main/resources/dev/reportit/reportit",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.reportit [:dev.reportit.Launcher.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.reportit [:dev.reportit.reportit.Launcher.main()].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/enric/IdeaProjects/reportit/src/main/resources/dev/reportit/reportit&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\enric\IdeaProjects\reportit\src\main\resources\dev\reportit\reportit" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\enric\IdeaProjects\reportit\src\main\resources\dev\reportit" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="24" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="dev.reportit.reportit.Launcher" />
+      <option name="MAIN_CLASS_NAME" value="dev.reportit.Launcher" />
       <module name="reportit.main" />
       <extension name="coverage">
         <pattern>

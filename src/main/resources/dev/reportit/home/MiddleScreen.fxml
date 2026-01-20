@@ -12,14 +12,15 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.shape.SVGPath?>
 
-<AnchorPane prefHeight="844" prefWidth="390" stylesheets="@middle.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="844" prefWidth="390" stylesheets="@middle.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="dev.reportit.Controllers">
 
     <children>
         <!-- Background -->
         <Region styleClass="bg" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
 
         <!-- Header -->
-        <Label layoutX="28" layoutY="42" styleClass="h1" text="Welcome, user" />
+        <Label layoutX="28" layoutY="42" styleClass="h1" fx:id="usernameLabel" text="Welcome, user" />
         <Label layoutX="332" layoutY="40" styleClass="gearText" text="⚙" />
 
         <!-- Search pill -->
@@ -70,7 +71,7 @@
         </StackPane>
 
         <!-- Bottom nav -->
-        <Pane layoutX="0" layoutY="720" prefHeight="124" prefWidth="390">
+        <Pane layoutX="0" layoutY="720" prefHeight="124" prefWidth="390" onMouseClicked="#goHome">
             <!-- Home icon -->
             <SVGPath content="M12 3 L3 11 L3 23 L10 23 L10 16 L14 16 L14 23 L21 23 L21 11 Z" layoutX="86" layoutY="62" styleClass="nav-icon" />
 

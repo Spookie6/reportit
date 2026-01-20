@@ -5,7 +5,10 @@ module dev.reportit.reportit {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires org.kordamp.ikonli.javafx;
+    requires java.net.http;
+    requires com.fasterxml.jackson.databind;
+    requires com.fasterxml.jackson.core;
 
-    opens dev.reportit.reportit to javafx.fxml;
-    exports dev.reportit.reportit;
+    opens dev.reportit to javafx.fxml;
+    exports dev.reportit;
 }
