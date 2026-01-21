@@ -2,6 +2,9 @@ package dev.reportit.networking;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import dev.reportit.networking.responses.LoginResponse;
+import dev.reportit.networking.responses.MessageResponse;
+import dev.reportit.networking.responses.Response;
 
 import java.net.URI;
 import java.net.http.HttpRequest;
@@ -22,17 +25,15 @@ public class AuthService {
             Consumer<String> onSuccess,
             Consumer<Throwable> onError
     ) {
-        String json = String.format("{\"email\": \"%s\",\"username\": \"%s\",\"password\": \"%s\"}", email, username, password);
-
+        String json = toJson(new RegisterRequest(email, username, password));
         HttpRequest request = createReq(json, "/register");
-
         sendAsync(request, onSuccess, onError);
     }
 
     public static void login(
             String email,
             String password,
-            Consumer<LoginResponse> onSuccess,
+            Consumer<Response> onSuccess,
             Consumer<Throwable> onError
     ) {
         String json = toJson(new LoginRequest(email, password));
@@ -41,10 +42,15 @@ public class AuthService {
         sendAsync(request,
                 body -> {
                     try {
-                        LoginResponse res =
-                                mapper.readValue(body, LoginResponse.class);
-                        AuthState.setToken(res.token);
-                        onSuccess.accept(res);
+                        if (body.contains("token")) {
+                            LoginResponse res =
+                                    mapper.readValue(body, LoginResponse.class);
+                            AuthState.setToken(res.token);
+                            onSuccess.accept(res);
+                        } else {
+                            MessageResponse res = mapper.readValue(body, MessageResponse.class);
+                            onSuccess.accept(res);
+                        }
                     } catch (Exception e) {
                         onError.accept(e);
                     }
@@ -82,7 +88,6 @@ public class AuthService {
         );
     }
 
-
     private static HttpRequest createReq(String json, String endpoint) {
         return HttpRequest.newBuilder()
                 .uri(URI.create(BASE_URL + endpoint))
@@ -101,8 +106,5 @@ public class AuthService {
     }
 
     record LoginRequest(String email, String password) {}
-
-    public static class LoginResponse {
-        public String token;
-    }
+    record RegisterRequest(String email, String username, String password) {}
 }

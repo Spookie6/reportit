@@ -71,17 +71,17 @@
         </StackPane>
 
         <!-- Bottom nav -->
-        <Pane layoutX="0" layoutY="720" prefHeight="124" prefWidth="390" onMouseClicked="#goHome">
+        <Pane layoutX="0" layoutY="720" prefHeight="124" prefWidth="390">
             <!-- Home icon -->
-            <SVGPath content="M12 3 L3 11 L3 23 L10 23 L10 16 L14 16 L14 23 L21 23 L21 11 Z" layoutX="86" layoutY="62" styleClass="nav-icon" />
+            <SVGPath content="M12 3 L3 11 L3 23 L10 23 L10 16 L14 16 L14 23 L21 23 L21 11 Z" layoutX="86" layoutY="62" styleClass="nav-icon" onMouseClicked="#goHome"/>
 
             <!-- FAB -->
-            <StackPane layoutX="163" layoutY="20" prefHeight="64" prefWidth="64" styleClass="fab">
+            <StackPane layoutX="163" layoutY="20" prefHeight="64" prefWidth="64" styleClass="fab" onMouseClicked="#goReport">
                 <Label styleClass="fab-plus" text="+" />
             </StackPane>
 
             <!-- Chat icon (simple bubble) -->
-            <SVGPath content="M3 6 H21 V18 H12 L8 22 V18 H3 Z" layoutX="283" layoutY="62" styleClass="nav-icon" />
+            <SVGPath content="M3 6 H21 V18 H12 L8 22 V18 H3 Z" layoutX="283" layoutY="62" styleClass="nav-icon" onMouseClicked="#goThread"/>
         </Pane>
 
     </children>

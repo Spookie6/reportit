@@ -23,6 +23,7 @@
 
                 <Label styleClass="app-title" text="ReportIt" />
                 <Label styleClass="app-subtitle" text="Welcome Back" />
+                <Label styleClass="info-label" fx:id="infoLabel" text=""/>
 
                 <VBox spacing="15.0">
                     <padding>

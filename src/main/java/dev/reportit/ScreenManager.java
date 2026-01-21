@@ -43,4 +43,8 @@ public class ScreenManager {
     public static Scenes getCurrent() {
         return current;
     }
+
+    public static Scenes getLast() {
+        return last;
+    }
 }

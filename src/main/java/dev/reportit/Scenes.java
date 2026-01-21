@@ -5,6 +5,7 @@ public enum Scenes {
     THREAD("chat/Thread/Thread.fxml"),
     MIDDLE("home/MiddleScreen.fxml"),
     ADDINCIDENTDIALOG("report/AddIncidentDialog.fxml"),
+    FEATUREDINCIDENTS("report/FeaturedIncidentsDialog.fxml"),
     GETHELPDIALOG("report/GetHelpDialog.fxml"),
     INCIDENTSNEARYOUDIALOG("report/IncidentsNearYou.fxml"),
     REPORTSCREEN("report/ReportScreen.fxml"),

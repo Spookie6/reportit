@@ -5,32 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc88efd-c383-4272-b4d6-134bbbbbbd97" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/AppContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/Scenes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/ScreenManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/ApiUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/AuthState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/UserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/WebSocketClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/reportit/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/ReportIt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/reportit/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/Controllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/reportit/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/chat/Chat/ChatUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Chat/ChatUI.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/chat/Chat/ChatUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Chat/ChatUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/chat/Thread/Thread.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Thread/Thread.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/chat/Thread/ThreadUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Thread/ThreadUI.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/home/MiddleScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/home/MiddleScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/home/middle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/home/middle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/AddIncidentDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/AddIncidentDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/FeaturedIncidentsDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/FeaturedIncidentsDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/GetHelpDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/GetHelpDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/IncidentsNearYouDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/IncidentsNearYouDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/ReportScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/ReportScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/reportit/report/report.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/responses/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/responses/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/responses/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/AppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/AppContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/Controllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/Scenes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/Scenes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/ScreenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/ScreenManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/reportit/networking/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Chat/ChatUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Chat/ChatUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Thread/Thread.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/chat/Thread/Thread.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/home/MiddleScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/home/MiddleScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/login/LoginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/login/LoginScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/login/RegisterScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/login/RegisterScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/login/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/AddIncidentDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/AddIncidentDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/FeaturedIncidentsDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/FeaturedIncidentsDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/IncidentsNearYouDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/IncidentsNearYouDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/ReportScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/reportit/report/ReportScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

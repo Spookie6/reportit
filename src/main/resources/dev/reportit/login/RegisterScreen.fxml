@@ -23,6 +23,7 @@
 
                 <Label styleClass="app-title" text="Register" />
                 <Label styleClass="app-subtitle" text="Create a new account" />
+                <Label styleClass="info-label" fx:id="infoLabel" text=""/>
 
                 <VBox spacing="12.0">
                     <padding>

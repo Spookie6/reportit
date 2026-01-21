@@ -14,9 +14,9 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="rootPane" prefHeight="852.0" prefWidth="393.0" stylesheets="@ChatCss.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="rootPane" prefHeight="852.0" prefWidth="393.0" stylesheets="@ChatUI.css" xmlns="http://javafx.com/javafx/25" fx:controller="dev.reportit.Controllers" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="60.0" prefHeight="60.0" prefWidth="353.0" styleClass="header-container" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0">
+      <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="60.0" prefHeight="60.0" prefWidth="353.0" styleClass="header-container" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0" onMouseClicked="#goPrevious">
          <children>
             <Button mnemonicParsing="false" styleClass="icon-button" text="&lt;">
                <font>

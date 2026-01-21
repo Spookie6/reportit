@@ -15,6 +15,11 @@
     -fx-text-fill: rgba(13,26,18,0.7);
 }
 
+.info-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: rgba(255, 0, 0, 1);
+}
+
 .label-text {
     -fx-font-size: 14px;
     -fx-font-weight: bold;

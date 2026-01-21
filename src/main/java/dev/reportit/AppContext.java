@@ -8,7 +8,7 @@ public class AppContext {
     public static UserData currentUser;
 
     public static void init() {
-        socket.connect();
+        ;
     }
 
     public static void shutdown() {
